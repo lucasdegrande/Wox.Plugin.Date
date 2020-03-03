@@ -1,0 +1,12 @@
+{
+  "ID": "85ADA3B4EB454055BBF3B2206A6C99B6",
+  "ActionKeyword": "dt",
+  "Name": "Date Utils",
+  "Description": "Mostrar a data corrente",
+  "Author": "lucasdegrande",
+  "Version": "1.0.0",
+  "Language": "csharp",
+  "Website": "http://www.getwox.com",
+  "IcoPath": "Images\\icon.png",
+  "ExecuteFileName": "Wox.Plugin.Date.dll"
+}
