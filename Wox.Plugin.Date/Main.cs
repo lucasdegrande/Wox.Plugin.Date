@@ -30,7 +30,7 @@ namespace Wox.Plugin.Date
                 }
             });
 
-            var dataDoInicioDoDiaAteHoraAtual = $@"BETWEEN ""{dataHora.ToString("yyyy-MM-dd")} 00:00:00"" AND ""{dataHora.ToString("yyyy-MM-dd HH:mm:ss")}""";
+            var dataDoInicioDoDiaAteHoraAtual = $@"BETWEEN '{dataHora.ToString("yyyy-MM-dd")} 00:00:00' AND '{dataHora.ToString("yyyy-MM-dd HH:mm:ss")}'";
             results.Add(new Result()
             {
                 Title = $"Inicio do dia atual até a hora atual para pesquisas no banco",
@@ -43,7 +43,7 @@ namespace Wox.Plugin.Date
                 }
             });
 
-            var diaCompletoParaPesquisaNoBanco = $@"BETWEEN ""{dataHora.ToString("yyyy-MM-dd")} 00:00:00"" AND ""{dataHora.ToString("yyyy-MM-dd")} 23:59:59""";
+            var diaCompletoParaPesquisaNoBanco = $@"BETWEEN '{dataHora.ToString("yyyy-MM-dd")} 00:00:00' AND '{dataHora.ToString("yyyy-MM-dd")} 23:59:59'";
             results.Add(new Result()
             {
                 Title = $"Dia completo atual para pesquisas no banco",
