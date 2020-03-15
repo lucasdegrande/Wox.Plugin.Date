@@ -4,7 +4,6 @@ namespace Wox.Plugin.Date.Core
 {
     public static class Data
     {
-
         public static DateTime Obter(string texto = null)
         {
             var resultado = DateTime.Now;
@@ -13,13 +12,9 @@ namespace Wox.Plugin.Date.Core
                 return resultado;
 
             if (texto.ToLower() == "ontem")
-            {
                 return resultado.AddDays(-1);
-            }
-            else
-            {
-                DateTime.TryParse(texto, out resultado);
-            }
+
+            DateTime.TryParse(texto, out resultado);
 
             return resultado;
         }
