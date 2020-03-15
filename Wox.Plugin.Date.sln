@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wox.Plugin.Date", "Wox.Plugin.Date\Wox.Plugin.Date.csproj", "{689B709D-4D8C-44E1-80FC-958E9AD9047A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wox.Plugin.Date.Core", "Wox.Plugin.Date.Core\Wox.Plugin.Date.Core.csproj", "{FCF0F7FA-1241-4C3B-BE83-CB66F6FB4C31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wox.Plugin.Date.Core.Tests", "Wox.Plugin.Date.Core.Tests\Wox.Plugin.Date.Core.Tests.csproj", "{1B74AB04-A476-4CDE-B47E-F2C59493DB16}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{689B709D-4D8C-44E1-80FC-958E9AD9047A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{689B709D-4D8C-44E1-80FC-958E9AD9047A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{689B709D-4D8C-44E1-80FC-958E9AD9047A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCF0F7FA-1241-4C3B-BE83-CB66F6FB4C31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCF0F7FA-1241-4C3B-BE83-CB66F6FB4C31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCF0F7FA-1241-4C3B-BE83-CB66F6FB4C31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCF0F7FA-1241-4C3B-BE83-CB66F6FB4C31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B74AB04-A476-4CDE-B47E-F2C59493DB16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B74AB04-A476-4CDE-B47E-F2C59493DB16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B74AB04-A476-4CDE-B47E-F2C59493DB16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B74AB04-A476-4CDE-B47E-F2C59493DB16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
