@@ -1,6 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Windows.Forms;
+using Wox.Plugin.Date.Core;
 
 namespace Wox.Plugin.Date
 {
@@ -16,7 +16,7 @@ namespace Wox.Plugin.Date
         {
             var results = new List<Result>();
             texto = query.Search.Replace(".", "");
-            var dataHora = ObterData();
+            var dataHora = Data.Obter(texto);
 
             results.Add(new Result()
             {
@@ -59,23 +59,5 @@ namespace Wox.Plugin.Date
             return results;
         }
 
-        private DateTime ObterData()
-        {
-            var resultado = DateTime.Now;
-
-            if (string.IsNullOrEmpty(texto))
-                return resultado;
-
-            if (texto.ToLower() == "ontem")
-            {
-                return resultado.AddDays(-1);
-            }
-            else
-            {
-                DateTime.TryParse(texto, out resultado);
-            }
-
-            return resultado;
-        }
     }
 }
